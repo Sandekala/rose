@@ -103,26 +103,26 @@ body {
 }
 .rose__leaf__line--1 {
   background-color: #338f37;
-  top: -20px;
-  width: 100px;
-  height: 30px;
+  bottom: 0;
+  width: 10vmin;
+  height: 3vmin;
   position: absolute;
   border-radius: 0 0 100px 100px;
-  left: -60px;
+  left: -400%;
   z-index: 1;
   transform: rotate(15deg);
   -webkit-animation: blooming-rose 2s backwards;
-          animation: blooming-rose 2s backwards;
+  animation: blooming-rose 2s backwards;
 }
 
 .rose__leaf__line--2 {
   background-color: #338f37;
-  top: -20px;
-  width: 100px;
-  height: 30px;
+  bottom: 0;
+  width: 10vmin;
+  height: 3vmin;
   position: absolute;
   border-radius:  0 0 100px 100px;
-  right: -60px;
+  right: -400%;
   z-index: 1;
   transform: rotate(-15deg);
   -webkit-animation: blooming-rose 2s backwards;
@@ -182,71 +182,71 @@ body {
 }
 .rose__line__leaf {
   transform: scale(1.5);
-  width: 30px;
-  height: 30px;
+  width: 3vmin;
+  height: 3vmin;
   background: #066406;
   top: 100px;
   left: 10px;
   position: absolute;
 
   &.rose__line__leaf--1 {
-    top: 260px;
+    top: 15%;
     left: -250%;
   }
 
   &.rose__line__leaf--2 {
-    top: 80px;
+    top: 25%;
     left: 150%;
     transform: rotate(180deg) scale(1.5);
   }
 
   &.rose__line__leaf--3 {
-    top: 120px;
+    top: 35%;
     left: -250%;
   }
 
   &.rose__line__leaf--4 {
-    top: 160px;
+    top: 45%;
     left: 150%;
     transform: rotate(180deg) scale(1.5);
   }
 
   &.rose__line__leaf--5 {
-    top: 200px;
+    top: 55%;
     left: -250%;
   }
 
   &.rose__line__leaf--6 {
-    top: 240px;
+    top: 65%;
     left: 150%;
     transform: rotate(180deg) scale(1.5);
   }
 
 
   &::after {
-    width: 41px;
-    height: 34px;
+    width: 4vmin;
+    height: 4vmin;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     border-radius: 100%;
     background: var(--dark-color);
     content: '';
     position: absolute;
-    left: -10px;
-    top: 17px;
+    left: -33%;
+    top: -50%;
   }
 
   &::before {
-    width: 41px;
-    height: 34px;
+    width: 4vmin;
+    height: 4vmin;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     border-radius: 100%;
     background: var(--dark-color);
     content: '';
     position: absolute;
-    left: -10px;
-    top: -11px;
+    left: -33%;
+    top: 50%;
     z-index: 0;
   }
 }
